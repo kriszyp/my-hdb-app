@@ -9,7 +9,7 @@ jsResource: # Loads JavaScript modules such that their exports are exported as r
   files: resources.js # the entry module for resources
   # path: / # exported resources are on the root path by default, like http://server/resource-name
 fastifyRoutes: # This loads files that define fastify routes using fastify's auto-loader
-  files: routes/*.js
+  files: routes/*.js # specify the location of route definition modules
   path: . # relative to the app-name, like  http://server/app-name/route-name
 static: # This allows static files to be directly accessible
   root: web
